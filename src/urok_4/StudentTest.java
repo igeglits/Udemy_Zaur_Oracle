@@ -10,12 +10,26 @@ class StudentTest {
         student1.foreignLangAverageMark = 6;
         student1.name = "Ivan";
         student1.year = 2;
-        System.out.println("Student ID "+ student1.studentID);
-        System.out.println("name " + student1.name + '\n'
-                + "family " + student1.family + '\n'
-                + "year " + student1.year + '\n'
-                + "average Economic grade " + student1.averageEconomicMark + '\n'
-                + "average Math Grade " + student1.averageMathMark + '\n'
-                + "foreign Languge Grade " + student1.foreignLangAverageMark);
+        printInfo(student1);
+        Student student = new Student();
+        student.studentID=456;
+        student.name = "Petr";
+        student.family = "Ivanov";
+        student.year = 4;
+        student.averageEconomicMark = 9;
+        student.averageMathMark = 4;
+        student.foreignLangAverageMark=8;
+        printInfo(student);
+    }
+
+    private static void printInfo(Student student) {
+        System.out.println("Student ID "+ student.studentID);
+        System.out.println("name " + student.name + '\n'
+                + "family " + student.family + '\n'
+                + "year " + student.year + '\n'
+                + "average Economic grade " + student.averageEconomicMark + '\n'
+                + "average Math Grade " + student.averageMathMark + '\n'
+                + "foreign Languge Grade " + student.foreignLangAverageMark);
+        System.out.println(student.name + " average grade= "+ ((student.foreignLangAverageMark+ student.averageEconomicMark+ student.averageMathMark)/3f));
     }
 }
