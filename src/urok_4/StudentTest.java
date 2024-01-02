@@ -1,3 +1,4 @@
+/*
 package urok_4;
 
 class StudentTest {
@@ -33,3 +34,4 @@ class StudentTest {
         System.out.println(student.name + " average grade= "+ ((student.foreignLangAverageMark+ student.averageEconomicMark+ student.averageMathMark)/3f));
     }
 }
+*/
