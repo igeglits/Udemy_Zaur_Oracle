@@ -9,25 +9,25 @@ class Timer {
         int i = 0;
         OUTER:
         while (i < 24) {
-            int j = 0;
+            int m = -1;
             INNER_1:
             do {
-                if ((i > 1) && j != 0 && (j % 10 == 0)) {
+                m++;
+                if ((i > 1) && m != 0 && (m % 10 == 0)) {
                     break OUTER;
                 }
                 int s = 0;
                 INNER_2:
                 while (s < 60) {
-                    if ((s * i) > j) {
-                        j++;
+                    if ((s * i) > m) {
+
                         continue INNER_1;
                     }
-                    System.out.println(i + " : " + j + " : " + s);
+                    System.out.println(i + " : " + m + " : " + s);
                     s++;
                 }
-                j++;
             }
-            while (j < 60);
+            while (m < 59);
             i++;
         }
     }
