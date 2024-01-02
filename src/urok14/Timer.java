@@ -2,7 +2,7 @@ package urok14;
 
 class Timer {
     public static void main(String[] args) {
-        timer(6);
+        timerWithWhile(6);
     }
 
     static void timer(int hours) {
@@ -21,6 +21,17 @@ class Timer {
                     }
                     System.out.println(i + " : " + j + " : " + s );
                 }
+            }
+        }
+    }
+    static  void timerWithWhile(int hours){
+        OUTER:
+        for (int chas = 0; chas <hours; chas++){
+            int minuta = 0;
+            INNER:
+            while (minuta<60){
+                System.out.println(chas + ":"+minuta);
+                minuta++;
             }
         }
     }
