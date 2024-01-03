@@ -5,7 +5,7 @@ import java.util.List;
 
 class STringANdMethods {
     public static void main(String[] args) {
-
+separatorANdSubstring();
     }
 
     static void joinToStringPrint() {
@@ -31,6 +31,12 @@ class STringANdMethods {
             System.out.println(human);
         }
     }
+    static void separatorANdSubstring() {
+        String filePath = "D:\\Movies\\Futurama.mp4";
+        int lastFileSeparatorIndex = filePath.lastIndexOf('\\');
+        String fileName = filePath.substring(lastFileSeparatorIndex + 1);
+        System.out.println(fileName);
+    }
 }
 /*Определение позиции элемента в строке
 В языке Java String предоставляет набор методов для определения позиции символа/подстроки в строке:
@@ -48,5 +54,14 @@ str — искомая строка
 fromIndex — позиция с которой нужно искать элемент
 методы indexOf — возвращают позицию первого найденного элемента
 методы lastIndexOf — возвращают позицию последнего найденного элемента
-Если искомый элемент не найден, методы вернут в строке -1.*/
+Если искомый элемент не найден, методы вернут в строке -1.
+Извлечение подстроки из строки
+Для извлечения подстроки из строки класс String в Java предоставляет методы:
+substring(int beginIndex)
+substring(int beginIndex, int endIndex)
+Перевод строки в верхний/нижний регистр:
+Класс String предоставляет методы для перевода строки в верхний и нижний регистры:
+toLowerCase()
+toUpperCase()
+*/
 
