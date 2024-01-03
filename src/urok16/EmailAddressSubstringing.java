@@ -24,6 +24,7 @@ public class EmailAddressSubstringing {
             }
         }
         System.out.println(Arrays.toString(indexes));
+        System.out.println(emails.length());
         String[] domains = {emails.substring(indexes[0], indexes[1]), emails.substring(indexes[2], indexes[3]), emails.substring(indexes[4], indexes[5])};
         System.out.println(Arrays.toString(domains));
 
