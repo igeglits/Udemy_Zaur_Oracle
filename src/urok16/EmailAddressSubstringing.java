@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 class EmailAddressSubstringing {
     public static void main(String[] args) {
-        //extractEmailDomain(emails);
+        extractEmailDomain(emails);
         otZaura(emails);
     }
 
@@ -13,7 +13,6 @@ class EmailAddressSubstringing {
 
     static void extractEmailDomain(String emails) {
         int[] indexes = new int[6];
-        //indexes[5] = emails.length();
         for (int i = 0, j = 0; i < emails.length(); i++) {
             if ('@' == (emails.charAt(i))) {
                 indexes[j] = i + 1;
@@ -29,12 +28,6 @@ class EmailAddressSubstringing {
         String[] domains = {emails.substring(indexes[0], indexes[1]), emails.substring(indexes[2], indexes[3]), emails.substring(indexes[4], indexes[5])};
         toPrint(domains);
 
-        /*String firstDomain = emails.substring(indexes[0], indexes[1]);
-        String secondDomain = emails.substring(indexes[2], indexes[3]);
-        String thirdDomain = emails.substring(indexes[4], indexes[5]);
-        System.out.println(firstDomain + '\n'
-                + secondDomain + '\n'
-                + thirdDomain);*/
     }
 
     static void toPrint(String[] array) {
