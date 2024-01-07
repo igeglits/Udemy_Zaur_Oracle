@@ -6,7 +6,7 @@ import java.util.Arrays;
 class EmailAddressSubstringing {
     public static void main(String[] args) {
         extractEmailDomain(emails);
-        otZaura(emails);
+       // otZaura(emails);
     }
 
     public static String emails = "ya123@yahoo.com; on456@mail.ru; ona@gmail.com;";
