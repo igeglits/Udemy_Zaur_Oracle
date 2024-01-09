@@ -38,10 +38,31 @@ class ArraysTest {
         }
         out.print(" }");
     }
+    static void array3 (int[] array){
+        int temp=0;
+        for (int i=0 ; i<array.length-1 ; i++){
+            if (array[i]>array[i+1]){
+            temp = array[i+1];
+            array[i+1]=array[i];
+            array[i]= temp;
+            }
+        }
+        out.println();
+        for (int i : array) {
+            out.print(i + " ");
+        }
+    }
+    static void array4 (int[] array){
+        Arrays.stream(array)
+                .sorted().toArray();
+        out.println(Arrays.toString(array));
+    }
 
     public static void main(String[] args) {
         sortirovka(array);
         showArray(array2);
         showArray(new String[][]{{"man", "woman"}, {"male", "female"}});
+        array3(array);
+        array4(array);
     }
 }
