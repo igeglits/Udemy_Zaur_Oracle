@@ -15,7 +15,7 @@ class ArraysTest {
         for (int i : array) {
             out.print(i + " ");
         }
-        out.println(Arrays.binarySearch(array, 0));
+        out.println(Arrays.binarySearch(array, -34));
 
     }
 
@@ -86,12 +86,12 @@ class ArraysTest {
     }
 
     public static void main(String[] args) {
-//        sortirovka(array);
-//        showArray(array2);
-//        showArray(new String[][]{{"man", "woman"}, {"male", "female"}});
-        //      array3(array);
-        //    out.println();
-//        array4(array);
+       sortirovka(array);
+       showArray(array2);
+       showArray(new String[][]{{"man", "woman"}, {"male", "female"}});
+           array3(array);
+           out.println();
+        array4(array);
         out.println("sort Desc");
         sortDesc(array);
     }
