@@ -1,6 +1,6 @@
 package multithreading;
 
-class MethodJoin {
+class  MethodJoin {
     public static void main(String[] args) throws InterruptedException {
         System.out.println();
         Thread myThread = new Thread(new Worker());

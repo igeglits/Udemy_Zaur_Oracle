@@ -5,7 +5,7 @@ class MethodSleep_2 extends Thread {
         for (int i = 0; i <= 10; i++) {
             try { //метод РАН не выбрасывает exception потому что у него в сигнатуре оригинального метода run() нет throws InterruptedException
                 //значит мы должны обрабатывать исключение внутри метода, обернуть. В данном случае обернули в try-catch
-                Thread.sleep(1000);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -19,7 +19,7 @@ class MyRunnable1 implements Runnable {
         for (int i = 0; i <= 10; i++) {
             try { //метод РАН не выбрасывает exception потому что у него в сигнатуре оригинального метода run() нет throws InterruptedException
                 //значит мы должны обрабатывать исключение внутри метода, обернуть. В данном случае обернули в try-catch
-                Thread.sleep(1000);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
